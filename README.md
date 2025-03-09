@@ -1,7 +1,7 @@
-# WEB PROJECT FOR 
-A simple Web page collaboration project.
+# AN IT WEBSITE PROJECT 
+Feel free to make proper adjustments here, with the agreement from the whole team.
 
-## GROUP PARTICIPANTS
+## PROJECT CONTRIBUTORS
 - Reagan Wokorach DIT [213897](wr213897@students.cavendish.ac.ug)
 - John Ohisio DIT [201326](oj201326@students.cavendish.ac.ug)
 - Erias Lubega DIT [206069](ll206069@students.cavendish.ac.ug)
