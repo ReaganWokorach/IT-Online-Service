@@ -1,1 +1,76 @@
+/* 
 
+Our Green color: #2E8B57
+Our Yellow color: #FEDB03
+Our Red color: #CE2B14
+Our Light Blue color: #5595CC
+Our Dark Blue color: #033B5C
+Our white color: #f0f8ff;
+
+NB: I color picked all the colors from the photos shared.
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #2E8B57;
+    padding: 30px 7%;
+    padding: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #f0f8ff;
+}
+
+header a {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.topContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topContact p {
+    line-height: 1.5;
+}
+
+.gapUp {
+    margin-top: 1.05rem;
+}
+
+.topContact  span {
+    color: #FEDB03;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar a {
+    margin-left: 1.1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid transparent;
+    padding: 0.1rem .25rem;
+    transition: 0.7s ease;
+}
+
+.navBar a:hover {
+    color: aliceblue;
+    background-color: #FEDB03;
+    color: #000;
+    border-radius: 5px;
+}
