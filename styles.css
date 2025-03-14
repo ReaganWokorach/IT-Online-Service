@@ -129,6 +129,11 @@ main{
     border-radius: 3px;
 }
 
+h3{
+    color: #FEDB03;
+    margin-top: 50px;
+}
+
 /* mobile gadgets */
 /* Styles for tablets (601px - 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
