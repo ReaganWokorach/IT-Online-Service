@@ -288,5 +288,15 @@ body {
     }
 }
 
+/*style for error messages*/
+.error{
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+
 
 
