@@ -1,7 +1,7 @@
 // Form Validation Codes 
 
 document.getElementById("submitButton").addEventListener("click", function(event){
-    event.preventDefault(); //This function prevents the form submission
+    event.preventDefault(); //This function prevents the form submission immediately
     let isValid = true;
 
     //Getting form fields 
@@ -14,7 +14,7 @@ document.getElementById("submitButton").addEventListener("click", function(event
     let emailError = document.getElementById("emailError");
     let messageError = document.getElementById("messageError");
 
-    //Rsseting error messages
+    //Resseting error messages
 
     nameError.style.display = "none";
     emailError.style.display = "none";
