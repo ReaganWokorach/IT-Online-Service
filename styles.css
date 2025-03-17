@@ -43,9 +43,10 @@ header p a:hover {
 
 /* Styling the contact details in the header's section */
 .topContact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    
 }
 
 /* Styling the headings in the header's section */
@@ -222,7 +223,7 @@ h3{
     padding: 20px;
     border-radius: 10px;
 }
-.contact-form h2{
+.contact-form h1{
     text-align: center;
     margin-bottom: 20px;
     color: #007bff;
@@ -302,6 +303,9 @@ body {
 }
 .form-group{
     margin-bottom: 15px;
+}
+header p:hover{
+    color: #FEDB03;
 }
 
 

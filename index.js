@@ -3,6 +3,7 @@
 document.getElementById("submitButton").addEventListener("click", function(event){
     event.preventDefault(); //This function prevents the form submission immediately
     let isValid = true;
+    
 
     //Getting form fields 
     let name = document.getElementById("name");
@@ -16,9 +17,9 @@ document.getElementById("submitButton").addEventListener("click", function(event
 
     //Resseting error messages
 
-    nameError.style.display = "none";
-    emailError.style.display = "none";
-    messageError.style.display = "none";
+      nameError.style.display = "none";
+      emailError.style.display = "none";
+      messageError.style.display = "none";
 
     // validate name 
     if(name.value.trim() === ""){
@@ -27,11 +28,13 @@ document.getElementById("submitButton").addEventListener("click", function(event
     }
 
     // validate email
+    
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(email.value.trim() === ""){
         emailError.textContent = "This field is required";
         emailError.style.display = "block";
         isValid = false;
+          
     } else if (!emailPattern.test(email.value.trim())){
         emailError.textContent = "Please enter a valid email address";
         emailError.style.display = "block";
