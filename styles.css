@@ -325,16 +325,18 @@ header p:hover{
     font-weight: bolder;
     font-size: 2em;
     margin-bottom: 7rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .pricing-wrapper {
     display: flex;
     gap: 1rem;
     height: 400px;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
     justify-content: center;
 }
 .pricing-left {
-    border-radius: 1rem;
+    border-radius:1rem;
     flex: 1.5;
 }
 .pricing-right {
@@ -342,19 +344,20 @@ header p:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     padding: 1rem 4rem;
 }
 .pricing-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;    
+    /* object-fit: cover;    */
 }
 
 .pricing-heading{
     text-transform: uppercase;
-    font-size: 2em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 .pricing-para {
@@ -374,6 +377,14 @@ header p:hover{
     cursor: pointer;
     margin-bottom: 10rem;
 }
+.pricing-types-title{
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 
 .pricing-types-section {
     /* background-color: #f9f9f9; */
@@ -394,11 +405,6 @@ header p:hover{
     display: inline;
     width: 23%;
     height:2%;
-}
-.pricing-types-title{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 5rem;
 }
 
 .pricing-types-heading {
