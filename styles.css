@@ -312,4 +312,154 @@ header p:hover{
 }
 
 
+/* our pricing */
+
+.our-pricing{
+    background-color: #f0f8ff;
+    padding: 1rem 2rem;
+    margin: 0%;
+}
+.pricing-title {
+    color: black;
+    padding-left: 1rem;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 7rem;
+}
+.pricing-wrapper {
+    display: flex;
+    gap: 1rem;
+    height: 400px;
+    margin-bottom: 7rem;
+    justify-content: center;
+}
+.pricing-left {
+    border-radius: 1rem;
+    flex: 1.5;
+}
+.pricing-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 4rem;
+}
+.pricing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.pricing-heading{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.pricing-para {
+    font-size: 1.1em;
+    justify-content: center;   
+}
+
+.pricing-button {
+    width: max-content;
+    padding: 0.5rem 1rem;
+    /* border-radius: 2rem; */
+    font-size: 1em;
+    border: 15px;
+    background-color:#5595CC ;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 10rem;
+}
+
+.pricing-types-section {
+    /* background-color: #f9f9f9; */
+    padding: 2rem 4rem;
+}
+.pricing-types-wrapper{
+     display: flex;
+     gap: 2rem;
+     margin: 0%;
+     padding: 0%;
+     justify-content: center;
+}
+
+.pricing-types-card {
+    background-color: lightgray;
+    margin: 0%;
+    justify-items: auto;
+    display: inline;
+    width: 23%;
+    height:2%;
+}
+.pricing-types-title{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.pricing-types-heading {
+    max-width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    background-color: rgb(95, 95, 226);
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: bold;
+    padding-right: 5rem;
+    text-align: center;   
+}
+.pricing-types-heading-pink{
+    max-width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    background-color: rgb(216, 68, 147);
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.pricing-types-heading-yellow {
+    border-width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    background-color: gold;
+    border: 1px;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.pricing-types-para {
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pricing-types-key {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 1rem;  
+}
+
+.pricing-types-list {   
+    font-size: 1.1em;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
