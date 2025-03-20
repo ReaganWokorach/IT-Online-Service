@@ -6,6 +6,7 @@
     <meta name="author" content="In the readme file">
     <title>Our IT Website Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -28,7 +29,12 @@
         </div>
         <div class="navBar">
             <img src="Images/Logo8-removebg-preview.png" onerror="alert('Image not found! Check the path.')"  alt="Night Learnes' IT logo" class="ourLogo" />
-
+            <!-- Hamburger Menu Checkbox and Icon -->
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">
+                <i class="bx bx-menu"></i> <!-- Boxicon for hamburger menu -->
+                <i class="bx bx-x"></i> <!-- Close icon -->
+            </label>
             <nav class="allNavs">
                 <a href="index.html">Home</a>
                 <a href="aboutUs.html">About Us</a>
