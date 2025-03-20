@@ -10,3 +10,8 @@ Feel free to make proper adjustments here, with the agreement from the whole tea
 - Daniel Lakwonyero DIT [203603](ld203603@students.cavendish.ac.ug)
 - Esther Titilayo Oladiran BIT [209947](ot209947@students.cavendish.ac.ug)
 - Martin Onyabuko DIT [208687](om208687@students.cavendish.ac.ug)
+- Rehema Kabaguma
+- David
+
+## Find out website [here] (https://itonlineservices.netlify.app/)
+- Our website is hosted life on Netlify, and any changes that we make shall automatically be reflected on the live website.
