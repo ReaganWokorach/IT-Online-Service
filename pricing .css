@@ -486,6 +486,7 @@ header p a:hover {
 
 .pricing-right h2, .our-pricing h2, .pricing-types-section h2{
     color: #5595CC;
+    text-align: center;
 }
 
 
