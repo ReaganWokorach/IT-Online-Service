@@ -425,6 +425,16 @@ header p a:hover {
     .company-info td {
         padding: 10px;
     }
+
+    @media (max-width: 394px) {
+        .topContact h2 {
+            font-size: 0.85rem;
+        }
+
+        .topContact p {
+            font-size: 0.65rem;
+        }
+    }
 }
 
 @media (max-width: 600px) {
