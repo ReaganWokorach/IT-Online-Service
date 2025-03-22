@@ -135,7 +135,105 @@ header p a:hover {
     display: inline;
 }
 
+main h1, h2 {
+    color: #2c3e50;
+}
 
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+main ul li strong {
+    color: #3498db;
+}
+
+/* Container and Section Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-us {
+    padding: 20px;
+}
+
+.who-we-are, .why-choose-us, .mission {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    main ul li {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .about-us, .who-we-are, .why-choose-us, .mission {
+        padding: 15px;
+    }
+}
+
+/* Hover Effects */
+main ul li:hover {
+    background: #3498db;
+    color: #fff;
+    border-left-color: #2980b9;
+    transition: background 0.7s ease, color 0.7s ease;
+}
+
+main ul li:hover strong {
+    color: #fff;
+}
 
 /* FOOTER */
 /* General footer section  */
