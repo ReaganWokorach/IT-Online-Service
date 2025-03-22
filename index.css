@@ -11,34 +11,34 @@ body {
     padding: 20px;
     background: #f0f8ff;
 }
-.visionSection {
+.vision-section {
     border: 2px solid #333;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
-.contentWrapper {
+.content-wrapper {
     display: flex;
     gap: 0; /* No gap between Mission, Objectives, and the line */
     align-items: stretch;
 }
-.contentWrapper .section {
+.content-wrapper .section {
     flex: 1;
     border: 2px solid #333;
     padding: 20px;
     border-radius: 8px;
 }
-.contentWrapper .section:first-child {
+.content-wrapper .section:first-child {
     border-right: none; /* Shared middle border with the line */
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.contentWrapper .section:last-child {
+.content-wrapper .section:last-child {
     border-left: none; /* Shared middle border with the line */
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.verticalLine {
+.vertical-line {
     width: 2px;
     background-color: #333;
     margin: 0; /* No margin to ensure alignment */
