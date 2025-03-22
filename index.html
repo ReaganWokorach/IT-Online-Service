@@ -6,6 +6,8 @@
     <meta name="author" content="In the readme file">
     <title>Our IT Website Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -27,7 +29,13 @@
             </div>
         </div>
         <div class="navBar">
-            <img src="/Images/Logo8-removebg-preview.png" alt="Night Learnes' IT logo" class="ourLogo">
+            <img src="Images/Logo8-removebg-preview.png" onerror="alert('Image not found! Check the path.')"  alt="Night Learnes' IT logo" class="ourLogo" />
+            <!-- Hamburger Menu Checkbox and Icon -->
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+            <label for="hamburger-toggle" class="hamburger-icon">
+                <i class="bx bx-menu"></i> <!-- Boxicon for hamburger menu -->
+                <i class="bx bx-x"></i> <!-- Close icon -->
+            </label>
             <nav class="allNavs">
                 <a href="index.html">Home</a>
                 <a href="aboutUs.html">About Us</a>
@@ -41,14 +49,37 @@
         <br><br><br>
     </section>
 
-<main>
-
-    <h1>Home Page</h1> <!-- Remove the heading too -->
-    <!-- Martin, start from here sir.
-     Feel free to remove the add anything you need on the main page -->
-     <br><br> <!-- And this too please -->
-
-</main>
+    <main>
+    
+        <!--The Company Info-->
+        <div class="container">
+            <div class="vision-section">
+                <h2>Vision</h2>
+                <p>To be a leading IT solutions provider, empowering businesses and individuals with innovative, reliable, and affordable technology services that enhance digital experiences and drive success.</p>
+            </div>
+            <div class="content-wrapper">
+                <div class="section">
+                    <h2>Mission</h2>
+                    <p>To deliver high-quality and cost-effective IT solutions, including web design, domain & hosting services, and database management, tailored to our clients' unique needs.</p>
+                    <p>To provide seamless computer repair and maintenance services, ensuring optimal performance and longevity of IT assets.</p>
+                    <p>To enhance brand identity through professional logo and banner design that captures our clients’ essence and vision.</p>
+                    <p>To stay ahead in technology trends and continuously improve our services through research, innovation, and client feedback.</p>
+                    <p>To foster a collaborative and customer-centric approach, ensuring satisfaction and long-term partnerships.</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="section">
+                    <h2>Objectives</h2>
+                    <ul class="objectives-list">
+                        <li><strong>Quality Services:</strong> Provide top-tier IT solutions that meet industry standards and exceed customer expectations.</li>
+                        <li><strong>Customer Satisfaction:</strong> Build strong relationships with clients through personalized support and reliable service delivery.</li>
+                        <li><strong>Innovation & Growth:</strong> Continuously upgrade our technical expertise, tools, and methodologies to keep pace with evolving IT trends.</li>
+                        <li><strong>Accessibility & Affordability:</strong> Ensure that businesses and individuals, regardless of size or budget, can access quality IT services.</li>
+                        <li><strong>Brand Development:</strong> Help clients establish a strong digital presence through effective branding and web solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 <section class="Footer">
         <div class="our-services">
             <h3>
@@ -68,16 +99,15 @@
                 Navigation
             </h3><br>
             <ul class="home">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+                <a href="index.html">Home</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="ourServices.html">Our Services</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contactus.html">Contact Us</a>
     </div>
     <div class="contact-details">
             <h3>
-                Conatct Details
+                Contact Details
             </h3><br>
             <ul class="contact">
                 <li>Gurei Residential Area, Lemom Gaba Rd <br>
