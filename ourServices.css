@@ -5,9 +5,9 @@
 .services-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: auto;
     background-color: #fff;
-    max-width: 2000px; /* Adjusted max width */
+    max-width: 3000px; /* Adjusted max width */
     margin: 0 auto; /* Center the container */
 }
 
