@@ -346,6 +346,19 @@ h3{
 }
 
 /* RESPONSIVENESS FOR THE NAVBAR */
+
+/* Media Query for Desktop Screens */
+@media (min-width: 1025px) {
+    .navBar .ourLogo {
+        width: 28%;
+    }
+
+    .navBar a {
+        font-size: 1.3rem;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
 /* Media Query for Tablet Screens */
 @media (min-width: 769px) and (max-width: 1024px) {
     header {
@@ -358,6 +371,7 @@ h3{
 
     .allNavs a {
         font-size: 1rem;
+        padding: 0.3rem 0.3rem;
     }
 }
 

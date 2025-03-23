@@ -338,6 +338,20 @@ header p a:hover {
     padding-left: 2rem;
 }
 
+/* RESPONSIVE DESIGN FOR NAVBAR */
+
+/* Media Query for Desktop Screens */
+@media (min-width: 1025px) {
+    .navBar .ourLogo {
+        width: 28%;
+    }
+
+    .navBar a {
+        font-size: 1.3rem;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
 /* Media Query for Tablet Screens */
 @media (min-width: 769px) and (max-width: 1024px) {
     header {
@@ -350,6 +364,7 @@ header p a:hover {
 
     .allNavs a {
         font-size: 1rem;
+        padding: 0.3rem 0.3rem;
     }
 }
 
