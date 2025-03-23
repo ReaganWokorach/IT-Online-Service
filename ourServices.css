@@ -7,12 +7,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 10px;
 }
 
 .service-item {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
