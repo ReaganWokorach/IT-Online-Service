@@ -606,3 +606,11 @@ h3{
         margin-left: 110px;
     }
 }
+
+@media (max:1024px) {
+    .our-pricing{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
