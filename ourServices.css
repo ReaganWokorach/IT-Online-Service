@@ -7,8 +7,9 @@
     padding: 20px;
     background-color: transparent; /* Make background transparent */
     width: 100%; /* Set width to 100% */
-    max-width: none; /* Remove max width restriction */
+    max-width: 100%; /* Ensure it can expand fully */
     margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .main-service {
@@ -16,6 +17,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%; /* Ensure main-service takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .service-item {
@@ -26,6 +28,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff; /* Set background to white */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Updated color for service-item headings to match the green color */
@@ -70,4 +73,3 @@
         font-size: 0.9rem;
     }
 }
-This should ensure that the 
