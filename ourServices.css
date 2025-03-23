@@ -59,26 +59,3 @@
         font-size: 0.9rem;
     }
 }
-
-
-@media (max-width: 1024px) {
-    .main-service {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .service-item {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .service-item h2 {
-        font-size: 1.2rem;
-    }
-
-    .service-item p {
-        font-size: 0.9rem;
-    }
-}
