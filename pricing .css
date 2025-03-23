@@ -1,9 +1,12 @@
+/* General Styles */
 .services-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Adds padding for better spacing on mobile devices */
+    padding: 20px;
+    margin: auto;
+    max-width: 1400px;
 }
 
 .main-service {
@@ -25,8 +28,8 @@
 .service-content {
     display: flex;
     width: 100%;
-    gap: 60px; /* Adds more space between the image and the content */
-    position: relative; /* For positioning the vertical line */
+    gap: 60px;
+    position: relative;
 }
 
 .service-image {
@@ -37,28 +40,29 @@
 }
 
 .service-image img {
-    max-width: 120%; /* Increases the image size */
+    max-width: 120%;
     height: auto;
 }
 
 .service-description {
     flex: 2;
     padding-left: 20px;
-    position: relative; /* For positioning the vertical line */
+    position: relative;
 }
 
 .service-description h2 {
     margin-top: 0;
-    margin-bottom: 20px; /* Adds space between the heading and the description */
-    font-size: 1.5rem; /* Sets the font size of the heading */
-    color: green; /* Sets the color of the heading */
-    padding-left: 30px; /* Adds padding to the left of the heading to make space for the line */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: green;
+    padding-left: 30px;
+    position: relative;
 }
 
 .service-description h2::before {
     content: '';
     display: block;
-    width: 5px; /* Thickness of the vertical line */
+    width: 5px;
     height: 100%;
     background-color: green;
     position: absolute;
@@ -68,160 +72,131 @@
 
 .service-description p {
     margin-bottom: 0;
-    font-size: 1rem; /* Sets the font size of the paragraph text */
-    line-height: 1.6; /* Sets the paragraph spacing */
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* Responsive Design for screens up to 1028px */
+/* Pricing Table Styles */
+.pricing-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-table {
+    width: 60%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.pricing-table th {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.pricing-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.pricing-table .price {
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
+
+.pricing-table ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-table ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.pricing-table ul li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
 @media (max-width: 1028px) {
     .service-content {
-        gap: 40px; /* Reduces space between the image and the content on medium screens */
+        gap: 40px;
+    }
+    .pricing-table {
+        width: 80%;
     }
 }
 
-/* Responsive Design for screens up to 768px */
 @media (max-width: 768px) {
     .service-content {
         flex-direction: column;
-        gap: 20px; /* Reduces space between the image and the content on smaller screens */
+        gap: 20px;
     }
-
     .service-image img {
-        max-width: 100%; /* Adjusts the image size for smaller screens */
+        max-width: 100%;
     }
-
     .service-description {
         padding-left: 0;
     }
-
-    .service-description h2 {
-        padding-left: 30px; /* Adjusts padding for the vertical line on smaller screens */
-    }
-
     .service-description h2::before {
-        width: 4px; /* Adjusts the thickness of the vertical line on smaller screens */
-    }
-}
-
-/* Responsive Design for screens up to 480px */
-@media (max-width: 480px) {
-    .service-content {
-        gap: 10px; /* Reduces space between the image and the content on very small screens */
-    }
-
-    .service-description h2 {
-        padding-left: 30px; /* Adjusts padding for the vertical line on very small screens */
-    }
-
-    .service-description h2::before {
-        display: none; /* Removes the vertical line on very small screens */
-    }
-}
-
-
-
-
-
-
-
-
-
-   .services-container {
-        width: 1400px;
-        margin: auto;
+        width: 4px;
     }
     .pricing-container {
-        width: 100%;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .pricing-table {
-        width: 60%;
-        border-collapse: separate;
-        border-spacing: 15px;
-        text-align: center;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+        width: 100%;
+        display: block;
     }
-    .pricing-table th {
-        background-color: green;
-        color: white;
-        padding: 15px;
-        font-size: 18px;
-        text-transform: uppercase;
+    .pricing-table thead {
+        display: none;
+    }
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
     }
     .pricing-table td {
-        padding: 15px;
-        border: 1px solid #ddd;
-        font-size: 16px;
-        background-color: #f9f9f9;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+        background-color: white;
     }
-    .pricing-table .price {
-        font-weight: bold;
-        color: red;
-        font-size: 18px;
+}
+
+@media (max-width: 480px) {
+    .service-content {
+        gap: 10px;
     }
-    .pricing-table ul {
-        list-style: none;
-        padding: 0;
+    .service-description h2::before {
+        display: none;
+    }
+    .pricing-table {
+        width: 100%;
+    }
+    .pricing-table td {
+        font-size: 12px;
+        padding: 8px;
     }
     .pricing-table ul li {
-        padding: 6px 0;
-        border-bottom: 1px solid #ddd;
-        font-size: 14px;
+        font-size: 12px;
     }
-    .pricing-table ul li:last-child {
-        border-bottom: none;
-    }
-    
-    /* Responsive Design */
-    @media screen and (max-width: 1025px) {
-        .pricing-table {
-            width: 80%;
-        }
-    }
-    
-    @media screen and (max-width: 768px) {
-        .pricing-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .pricing-table {
-            width: 100%;
-            display: block;
-        }
-        .pricing-table thead {
-            display: none;
-        }
-        .pricing-table tr {
-            display: block;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 10px;
-        }
-        .pricing-table td {
-            display: block;
-            text-align: center;
-            font-size: 14px;
-            padding: 10px;
-            background-color: white;
-        }
-    }
-    
-    @media screen and (max-width: 480px) {
-        .pricing-table {
-            width: 100%;
-        }
-        .pricing-table td {
-            font-size: 12px;
-            padding: 8px;
-        }
-        .pricing-table ul li {
-            font-size: 12px;
-        }
-    }
+}
