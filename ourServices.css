@@ -31,12 +31,16 @@
     font-size: 1.5rem;
     color: #2E8B57; /* Green color */
     margin-bottom: 10px;
+    text-align: center; /* Center the headings */
 }
 
+/* Reduce and equalize the size of images */
 .service-item img {
     width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    height: 120px; /* Further reduced height */
+    object-fit: contain; /* Ensure images are not cropped and maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the images */
 }
 
 .service-item p {
@@ -68,4 +72,3 @@
         font-size: 0.9rem;
     }
 }
-
