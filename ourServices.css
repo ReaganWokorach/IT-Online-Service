@@ -7,7 +7,8 @@
     flex-direction: column;
     padding: 20px;
     background-color: #fff;
-    max-width: 2000px; /* Adjusted max width */
+   width: 100%;
+    max-width: 1200px;
     margin: 0 auto; /* Center the container */
 }
 
