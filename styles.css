@@ -256,6 +256,10 @@ main ul li:hover strong {
 .home, .contact, .services{
     list-style: none;
 }
+.home{
+    display: flex;
+    flex-direction: column;
+}
 
 /* custom list icon */
 .services li::before {
