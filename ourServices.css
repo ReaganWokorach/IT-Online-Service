@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 20px;
     background-color: transparent; /* Make background transparent */
-    max-width: 100%; /* Increase max width to 100% */
+    width: 100%; /* Set width to 100% */
     margin: 0 auto; /* Center the container */
 }
 
