@@ -56,9 +56,19 @@ main {
 
 /* Responsive styles for Our Services content */
 /* This is for making Our Services content responsive */
+
+@media (min-width: 1024px) {
+    main {
+        margin: 0 10%;
+    }
+}
 @media (max-width: 1024px) {
     .main-service {
         flex-direction: column;
+    }
+
+    main {
+        margin: 0 10%;
     }
 }
 
@@ -66,6 +76,9 @@ main {
     .service-item {
         margin: 10px 0;
     }
+main {
+    margin: 0 10%;
+}
 }
 
 @media (max-width: 480px) {
