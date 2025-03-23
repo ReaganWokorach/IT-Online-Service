@@ -148,7 +148,7 @@ main h2 {
     font-size: 2rem;
     margin-top: 30px;
     margin-bottom: 15px;
-    color: #34495e;
+    color: #2E8B57;
 }
 
 main p {
@@ -198,12 +198,12 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    main h1 {
-        font-size: 2rem;
-    }
+    /* main h1 {
+        font-size: 1.2rem;
+    } */
 
     main h2 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
     main p {
@@ -215,7 +215,7 @@ main {
     }
 
     main {
-        padding: 10px;
+        margin: 5px 10%;
     }
 
     .about-us, .who-we-are, .why-choose-us, .mission {
@@ -337,6 +337,14 @@ h3{
         font-size: 1.3rem;
         padding: 0.3rem 0.4rem;
     }
+
+    main {
+        margin: 5px 12%;
+    }
+
+    main h2 {
+        font-size: 1.9rem;
+    }
 }
 
 /* Media Query for Tablet Screens */
@@ -352,6 +360,14 @@ h3{
     .allNavs a {
         font-size: 1rem;
         padding: 0.3rem 0.3rem;
+    }
+
+    main {
+        margin: 5px 10%;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
     }
 }
 
@@ -413,6 +429,18 @@ h3{
 
         .topContact p {
             font-size: 0.65rem;
+        }
+
+        main {
+            margin: 5px 6%;
+        }
+    
+        main h2 {
+            font-size: 1.1rem;
+        }
+
+        main p {
+            font-size: 0.9rem;
         }
     }
 }
