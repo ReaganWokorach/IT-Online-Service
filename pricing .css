@@ -134,331 +134,236 @@ header p a:hover {
 .hamburger-toggle:checked ~ .hamburger-icon .bx-x {
     display: inline;
 }
-/* our pricing */
 
-.our-pricing{
-    background-color: #f0f8ff;
-    padding: 1rem 2rem;
-    margin: 0%;
+
+
+.services-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adds padding for better spacing on mobile devices */
 }
-.pricing-title {
-    color: black;
-    padding-left: 1rem;
-    font-weight: bolder;
-    font-size: 2em;
-    margin-bottom: 7rem;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/* .pricing-wrapper {
+
+.main-service {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    height: 400px;
-    margin-bottom: 5rem;
+    align-items: center;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.service-item {
+    width: 80%;
+    display: flex;
     justify-content: center;
-} */
-/* .pricing-left {
-    border-radius:1rem;
-    flex: 1.5;
-} */
-/* .pricing-right {
+    align-items: center;
+    margin: 20px 0;
+}
+
+.service-content {
+    display: flex;
+    width: 100%;
+    gap: 60px; /* Adds more space between the image and the content */
+    position: relative; /* For positioning the vertical line */
+}
+
+.service-image {
     flex: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem 4rem;
-} */
+    align-items: center;
+}
 
-.pricing-image {
-    width: 100%;
+.service-image img {
+    max-width: 120%; /* Increases the image size */
+    height: auto;
+}
+
+.service-description {
+    flex: 2;
+    padding-left: 20px;
+    position: relative; /* For positioning the vertical line */
+}
+
+.service-description h2 {
+    margin-top: 0;
+    margin-bottom: 20px; /* Adds space between the heading and the description */
+    font-size: 1.5rem; /* Sets the font size of the heading */
+    color: green; /* Sets the color of the heading */
+    padding-left: 30px; /* Adds padding to the left of the heading to make space for the line */
+}
+
+.service-description h2::before {
+    content: '';
+    display: block;
+    width: 5px; /* Thickness of the vertical line */
     height: 100%;
-    justify-content: center;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.pricing-heading{
-    text-transform: uppercase;
-    font-size: 1.3em;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-}
-.pricing-para {
-    font-size: 1.1em;
-    justify-content: center;   
+.service-description p {
+    margin-bottom: 0;
+    font-size: 1rem; /* Sets the font size of the paragraph text */
+    line-height: 1.6; /* Sets the paragraph spacing */
 }
 
-.pricing-button {
-    width: max-content;
-    padding: 0.5rem 1rem;
-    /* border-radius: 2rem; */
-    font-size: 1em;
-    border: 15px;
-    background-color:#5595CC ;
-    color: white;
-    margin: auto;
-    cursor: pointer;
-    margin-bottom: 10rem;
-}
-.pricing-button:hover {
-    background-color:#2E8B57;
-}
-.pricing-types-title{
-    font-size: 1.8em;
-    text-align: center;
-    margin-bottom: 5rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.pricing-types-section {
-    /* background-color: #f9f9f9; */
-    padding: 2rem 4rem;
-}
-.pricing-types-wrapper{
-    display: flex;
-    gap: 2rem;
-    margin: 0%;
-    padding: 0%;
-    justify-content: center;
-}
-
-.pricing-types-card {
-    background-color: lightgray;
-    margin: 0%;
-    justify-items: auto;
-    display: inline;
-    width: 23%;
-    height:2%;
-}
-
-.pricing-types-heading {
-    max-width: 100%;
-    height: 100%;
-    padding: 1rem 1rem;
-    background-color: rgb(95, 95, 226);
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: bold;
-    padding-right: 5rem;
-    text-align: center;   
-}
-.pricing-types-heading-pink{
-    max-width: 100%;
-    height: 100%;
-    padding: 1rem 1rem;
-    background-color: rgb(216, 68, 147);
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.pricing-types-heading-yellow {
-    border-width: 100%;
-    height: 100%;
-    padding: 1rem 1rem;
-    background-color: gold;
-    border: 1px;
-    margin-bottom: 1rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.pricing-types-para {
-    color: red;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.pricing-types-key {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 1rem;  
-}
-
-.pricing-types-list {   
-    font-size: 1.1em;
-    padding-left: 2rem;
-}
-
-/* RESPONSIVE DESIGN FOR NAVBAR */
-
-/* Media Query for Desktop Screens */
-@media (min-width: 1025px) {
-    .navBar .ourLogo {
-        width: 28%;
-    }
-
-    .navBar a {
-        font-size: 1.3rem;
-        padding: 0.3rem 0.4rem;
+/* Responsive Design for screens up to 1028px */
+@media (max-width: 1028px) {
+    .service-content {
+        gap: 40px; /* Reduces space between the image and the content on medium screens */
     }
 }
 
-/* Media Query for Tablet Screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-    header {
-        padding: 20px 3%;
-    }
-
-    .navBar img {
-        width: 28%;
-    }
-
-    .allNavs a {
-        font-size: 1rem;
-        padding: 0.3rem 0.3rem;
-    }
-}
-
-/* Media Query for Mobile Screens */
+/* Responsive Design for screens up to 768px */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 5%;
-    }
-
-    .topContact h2 {
-        font-size: 0.95rem;
-    }
-
-.ourTime, .ourEmail, .ourMobile {
-    font-size: 0.85rem;
-}
-
-    .navBar img {
-        width: 50%;
-    }
-    .hamburger-icon {
-        display: block; /* Show the hamburger icon */
-    }
-
-    .allNavs {
-        display: none; /* Hide nav links by default */
+    .service-content {
         flex-direction: column;
-        position: absolute;
-        top: 135px; /* Adjust based on header height */
-        left: 0;
+        gap: 20px; /* Reduces space between the image and the content on smaller screens */
+    }
+
+    .service-image img {
+        max-width: 100%; /* Adjusts the image size for smaller screens */
+    }
+
+    .service-description {
+        padding-left: 0;
+    }
+
+    .service-description h2 {
+        padding-left: 30px; /* Adjusts padding for the vertical line on smaller screens */
+    }
+
+    .service-description h2::before {
+        width: 4px; /* Adjusts the thickness of the vertical line on smaller screens */
+    }
+}
+
+/* Responsive Design for screens up to 480px */
+@media (max-width: 480px) {
+    .service-content {
+        gap: 10px; /* Reduces space between the image and the content on very small screens */
+    }
+
+    .service-description h2 {
+        padding-left: 30px; /* Adjusts padding for the vertical line on very small screens */
+    }
+
+    .service-description h2::before {
+        display: none; /* Removes the vertical line on very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+   .services-container {
+        width: 1400px;
+        margin: auto;
+    }
+    .pricing-container {
         width: 100%;
-        background-color: #2E8B57;
-        padding-left: 10%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-
-    /* Show navigation links when checkbox is checked */
-    .hamburger-toggle:checked ~ .allNavs {
+        margin-top: 20px;
         display: flex;
+        justify-content: center;
     }
-
-    .allNavs a {
-        font-size: 1rem;
-        margin-top: -10px;
+    .pricing-table {
+        width: 60%;
+        border-collapse: separate;
+        border-spacing: 15px;
+        text-align: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
     }
-
-    .allNavs a:hover {
-        background-color: #FEDB03;
-        color: #000;
-        padding: 0.5rem 1.1rem;
+    .pricing-table th {
+        background-color: green;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
     }
-
-    .company-info h1 {
-        font-size: 1.6rem;
+    .pricing-table td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        background-color: #f9f9f9;
     }
-
-    .company-info h2 {
-        font-size: 1.2rem;
-    }
-
-    .company-info p,
-    .company-info ul li {
-        font-size: 0.9rem;
-    }
-
-    .company-info table {
-        display: block;
-        overflow-x: auto;
-    }
-
-    .company-info th,
-    .company-info td {
-        padding: 10px;
-    }
-
-    @media (max-width: 394px) {
-        .topContact h2 {
-            font-size: 0.85rem;
-        }
-
-        .topContact p {
-            font-size: 0.65rem;
-        }
-    }
-}
-
-@media (max-width: 600px) {
-    .company-info h1 {
-        font-size: 1.4rem;
-    }
-
-    .company-info h2 {
-        font-size: 1.1rem;
-    }
-
-    .company-info p,
-    .company-info ul li {
-        font-size: 0.85rem;
-    }
-
-    .company-info table {
-        display: block;
-        overflow-x: auto;
-    }
-
-    .company-info th,
-    .company-info td {
-        padding: 8px;
-    }
-
-    /* Stack table columns vertically on very small screens */
-    .company-info table,
-    .company-info thead,
-    .company-info tbody,
-    .company-info th,
-    .company-info td,
-    .company-info tr {
-        display: block;
-    }
-
-    .company-info th {
-        background-color: #f0f8ff;
-        color: #033B5C;
-    }
-
-    .company-info td {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    .company-info td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
+    .pricing-table .price {
         font-weight: bold;
-        color: #033B5C;
+        color: red;
+        font-size: 18px;
     }
-}
-
-.pricing-right h2, .our-pricing h2, .pricing-types-section h2{
-    color: #5595CC;
-    text-align: center;
-}
+    .pricing-table ul {
+        list-style: none;
+        padding: 0;
+    }
+    .pricing-table ul li {
+        padding: 6px 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+    .pricing-table ul li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 1025px) {
+        .pricing-table {
+            width: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pricing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing-table {
+            width: 100%;
+            display: block;
+        }
+        .pricing-table thead {
+            display: none;
+        }
+        .pricing-table tr {
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .pricing-table td {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            background-color: white;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .pricing-table {
+            width: 100%;
+        }
+        .pricing-table td {
+            font-size: 12px;
+            padding: 8px;
+        }
+        .pricing-table ul li {
+            font-size: 12px;
+        }
+    }
 
 
 
