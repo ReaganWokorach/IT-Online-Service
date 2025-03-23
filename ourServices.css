@@ -30,7 +30,7 @@
 /* Reduce and equalize the size of images */
 .service-item img {
     width: 100%;
-    height: 120px; /* Further reduced height */
+    height: 100px; /* Further reduced height */
     object-fit: contain; /* Ensure images are not cropped and maintain aspect ratio */
     display: block;
     margin: 0 auto; /* Center the images */
