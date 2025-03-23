@@ -126,4 +126,102 @@
 
 
 
-   
+   .services-container {
+        width: 1400px;
+        margin: auto;
+    }
+    .pricing-container {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .pricing-table {
+        width: 60%;
+        border-collapse: separate;
+        border-spacing: 15px;
+        text-align: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    .pricing-table th {
+        background-color: green;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .pricing-table td {
+        padding: 15px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        background-color: #f9f9f9;
+    }
+    .pricing-table .price {
+        font-weight: bold;
+        color: red;
+        font-size: 18px;
+    }
+    .pricing-table ul {
+        list-style: none;
+        padding: 0;
+    }
+    .pricing-table ul li {
+        padding: 6px 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+    .pricing-table ul li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 1025px) {
+        .pricing-table {
+            width: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .pricing-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing-table {
+            width: 100%;
+            display: block;
+        }
+        .pricing-table thead {
+            display: none;
+        }
+        .pricing-table tr {
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .pricing-table td {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            background-color: white;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .pricing-table {
+            width: 100%;
+        }
+        .pricing-table td {
+            font-size: 12px;
+            padding: 8px;
+        }
+        .pricing-table ul li {
+            font-size: 12px;
+        }
+    }
