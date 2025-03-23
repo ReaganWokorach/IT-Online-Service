@@ -6,8 +6,8 @@
     flex-direction: column;
     padding: 0px;
     background-color: #fff;
-    max-width: 2000px; 
-   
+    max-width: auto; 
+    margin: 0 auto; 
 }
 
 .main-service {
