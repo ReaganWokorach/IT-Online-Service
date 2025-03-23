@@ -7,7 +7,7 @@
     padding: 20px;
     background-color: transparent; /* Make background transparent */
     width: 100%; /* Set width to 100% */
-    max-width: 100%; /* Ensure it can expand fully */
+    max-width: none; /* Remove max width restriction */
     margin: 0 auto; /* Center the container */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
