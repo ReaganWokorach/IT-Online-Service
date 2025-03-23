@@ -1,15 +1,6 @@
 /* Added by OHISIO JOHN */
 /* New CSS for the services content */
 /* This is for Our Services contents */
-.services-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 2000px; /* Adjusted max width */
-    margin: 0 auto; /* Center the container */
-}
-
 .main-service {
     display: flex;
     justify-content: space-between;
@@ -34,7 +25,7 @@
 }
 
 .service-item img {
-    width: 100%;
+    width: 80%; /* Reduced width to 80% */
     height: auto;
     margin-bottom: 10px;
 }
@@ -68,4 +59,3 @@
         font-size: 0.9rem;
     }
 }
-
