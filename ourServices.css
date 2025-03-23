@@ -1,6 +1,15 @@
 /* Added by OHISIO JOHN */
 /* New CSS for the services content */
 /* This is for Our Services contents */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: transparent; /* Make background transparent */
+    max-width: 100%; /* Increase max width to 100% */
+    margin: 0 auto; /* Center the container */
+}
+
 .main-service {
     display: flex;
     justify-content: space-between;
