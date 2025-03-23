@@ -3,7 +3,7 @@
 /* This is for Our Services contents */
 
 .services-container {
-    display: flex;
+   
     flex-direction: column;
     padding: 0px;
     background-color: #fff;
