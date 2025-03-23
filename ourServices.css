@@ -1,13 +1,14 @@
 /* Added by OHISIO JOHN */
 /* New CSS for the services content */
 /* This is for Our Services contents */
+
 .services-container {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding: 20px;
     background-color: #fff;
-    max-width: auto; 
-    margin: 0 auto; 
+    max-width: 2000px; /* Adjusted max width */
+    margin: 0 auto; /* Center the container */
 }
 
 .main-service {
