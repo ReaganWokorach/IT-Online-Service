@@ -54,3 +54,19 @@ document.getElementById("submitButton").addEventListener("click", function(event
         document.getElementById("contactForm").reset();
     }
 });
+
+//ScrollTop 
+
+let scrollButton = document.getElementById("scrollUp");
+
+window.onscroll = function (){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+};
+
+function scrollToTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
