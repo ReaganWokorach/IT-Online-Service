@@ -27,6 +27,7 @@ header {
     width: 100%;
     z-index: 1000;
     color: #f0f8ff;
+    cursor: pointer; /*Added the cursor type: Daniel */
 }
 
 /* Styling the links in the header section */
@@ -39,6 +40,9 @@ header p a {
 /* Adding the hover effects to the links in the header section */
 header p a:hover {
     color: #FEDB03;
+}
+header p:hover{
+    color: #FEDB03; /*Added this effect: Daniel */
 }
 
 /* Styling the contact details in the header's section */

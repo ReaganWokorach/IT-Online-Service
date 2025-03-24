@@ -27,6 +27,7 @@ header {
     width: 100%;
     z-index: 1000;
     color: #f0f8ff;
+    cursor: pointer; /*Changed the cursor type for Uniformity*/
 }
 
 /* Styling the links in the header section */
