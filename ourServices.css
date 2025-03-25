@@ -447,6 +447,18 @@ h3{
     color: #333;
 }
 
+
+/* Container and Section Styles */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px;
+    background: #fff;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+
 /* Responsive styles for Our Services content */
 /* This is for making Our Services content responsive */
 @media (max-width: 1024px) {
