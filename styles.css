@@ -139,7 +139,7 @@ header p:hover{
     display: inline;
 }
 
-main h1, h2 {
+/* main h1, h2 {
     color: #2c3e50;
 }
 
@@ -176,7 +176,7 @@ main ul li {
 
 main ul li strong {
     color: #3498db;
-}
+} */
 
 /* Container and Section Styles */
 main {
