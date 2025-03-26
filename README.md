@@ -3,7 +3,7 @@ Night Learners IT Group is a dynamic and innovative IT solutions provider dedica
 
 ## PROJECT CONTRIBUTORS
 - Reagan Wokorach DIT [213897](wr213897@students.cavendish.ac.ug)
-- John Ohisio DIT [201326](oj201326@students.cavendish.ac.ug)
+- John Ohisio BIT [201326](oj201326@students.cavendish.ac.ug)
 - Erias Lubega DIT [206069](ll206069@students.cavendish.ac.ug)
 - Ivan Enamu DIT [215819](ei215819@students.cavendish.ac.ug)
 - Kimara Odyek DIT [207742](ok207742@students.cavendish.ac.ug)
