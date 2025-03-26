@@ -143,7 +143,7 @@ main h1, h2 {
     color: #2c3e50;
 }
 
-main h1 {
+/* main h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -186,7 +186,7 @@ main {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-}
+} */
 
 .about-us {
     padding: 20px;
