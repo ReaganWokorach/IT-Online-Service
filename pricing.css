@@ -653,3 +653,24 @@ h3{
     }
 }
 
+
+/*ScrollUp Button Style */
+#scrollUp { 
+    padding: 8px 12px;
+    font-size: 35px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #218838;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.6);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+}

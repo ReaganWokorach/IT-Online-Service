@@ -21,8 +21,13 @@ document.getElementById("submitButton").addEventListener("click", function(event
       emailError.style.display = "none";
       messageError.style.display = "none";
 
-    // validate name 
+    // validate name (only letters and spaces allowed)
+    let namePattern = /^[A-Za-z\s]+$/;
     if(name.value.trim() === ""){
+        nameError.style.display = "block";
+        isValid = false;
+    }else if (!namePattern.test(name.value.trim())){
+        nameError.textContent = "Only Letters and spaces are allowed";
         nameError.style.display = "block";
         isValid = false;
     }
@@ -30,6 +35,7 @@ document.getElementById("submitButton").addEventListener("click", function(event
     // validate email
     
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let forbiddenCharacters = /[\/?]/; // This disallows /// and ??
     if(email.value.trim() === ""){
         emailError.textContent = "This field is required";
         emailError.style.display = "block";
@@ -37,6 +43,10 @@ document.getElementById("submitButton").addEventListener("click", function(event
           
     } else if (!emailPattern.test(email.value.trim())){
         emailError.textContent = "Please enter a valid email address";
+        emailError.style.display = "block";
+        isValid = false;
+    }else if(forbiddenCharacters.test(email.value.trim())){
+        emailError.textContent = "Email cannot contain '/', '?' or similar characters";
         emailError.style.display = "block";
         isValid = false;
     }
@@ -68,5 +78,8 @@ window.onscroll = function (){
 };
 
 function scrollToTop(){
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({top: 0, behavior: "smooth"});
 }
+
+
+   
