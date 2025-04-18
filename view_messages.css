@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+h2 {
+    color: #033B5C;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+th {
+    background-color: #2E8B57;
+    color: white;
+}
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* This is where the logout button style is */
+
+.logout-button {
+    background-color: #033B5C; /* dark blue */
+    color: #f0f8ff;            /* white */
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #CE2B14; /* red on hover */
+    color: white;
+}
+.logout-button:active {
+    background-color: #80190c;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+/*This is where the clear button style is*/
+.clear-button {
+    background-color: #CE2B14; /* red */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin: 20px 10px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #a32110;
+}
+.clear-button:active {
+    background-color: #80190c;
+}
+

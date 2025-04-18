@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="In the readme file">
     <title>Our IT Website Project</title>
-<!--     <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="contact-us.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="ourServices.css">
 </head>
 <body>
     <header>
@@ -44,60 +43,43 @@
                 <a href="contactus.php">Contact Us</a>
             </nav>
         </div>
+        <div class="admin-login-wrapper">
+            <a href="login.php" class="admin-login-button">Login as an Admin</a>
+        </div>
     </header>
-    <section class="homeSection">
-        <br><br><br>
-    </section>
-
-<main>
-
-<!-- Added by OHISIO JOHN -->
-
-
-
-    <!-- This first row is for the first main div -->
-    <div class="main-service">
-        <div class="service-item">
-            <h2>Web Design & Development</h2>
-            <img src="Images/web-design.png" alt="Web Design & Development">
-            <p>We create modern, responsive, and user-friendly websites tailored to business needs. Our team ensures your site looks great and performs well, using the latest technologies. Services include design, development, and ongoing support.</p>
-        </div>
-        <div class="service-item">
-            <h2>Domain & Hosting Services</h2>
-            <img src="Images/domain-hosting.png" alt="Domain & Hosting Services">
-            <p>We offer secure and reliable domain registration and hosting solutions. Choose from a variety of top-level domains and hosting plans to suit your needs. Our 24/7 support ensures your website remains online and accessible.</p>
-        </div>
-        <div class="service-item">
-            <h2>Computer Repair & Maintenance</h2>
-            <img src="Images/computer-repair.png" alt="Computer Repair & Maintenance">
-            <p>Our computer repair and maintenance services keep your IT systems running smoothly. We diagnose and fix hardware and software issues, offer preventive maintenance, and provide system updates, virus removal, and performance optimization.</p>
+    <!-- Contact form Section -->
+    <div class="contact-container">
+        <div class="contact-us">
+            <h1>Contact Us</h1>
+            <P class="contact-info">Should you have any questions, please get in touch</P>
+            
+            <form action="submit_form.php" method="post" id="contactForm"> <!--Added an id for Form validation with js and also added span with error messages within the form-->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" name="name"required>
+                    <span class="error" id="nameError">This field is required</span>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required>
+                    <span class="error" id="emailError">Please enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message" name="message"required></textarea>
+                    <span class="error" id="messageError">This Field is required</span>
+                </div>
+                <button type="submit" id="submitButton">Send Message</button> <!--Added an id to submitButton-->
+            </form>
+    </div>
+        <div class="map-container">
+            <iframe class="map" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.794964205131!2d31.57836337473266!3d4.845058840335621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x171800265e733ad7%3A0x7461e9a85669c87b!2sGurei%2C%20Juba%2C%20South%20Sudan!5e0!3m2!1sen!2sus!4v1711587551234!5m2!1sen!2sus" 
+        allowfullscreen="" loading="lazy">
+    </iframe>
         </div>
     </div>
-
-    <!-- This second row is for the second main div -->
-
-    <div class="main-service">
-        <div class="service-item">
-            <h2>Software Development</h2>
-            <img src="Images/software-development.png" alt="Software Development">
-            <p>We develop custom software solutions to meet the unique needs of your business. Our experienced developers use the latest technologies and best practices to create scalable, efficient, and secure software applications. We offer end-to-end services, from requirements analysis and design to development, testing, and deployment.</p>
-        </div>
-        <div class="service-item">
-            <h2>Logo & Banner Design</h2>
-            <img src="Images/logo-banner-design.png" alt="Logo & Banner Design">
-            <p>Our graphic designers create professional logos and banners that enhance your brand identity. We ensure your designs are visually appealing and functional. Services include multiple design concepts, revisions, and branding guidelines.</p>
-        </div>
-        <div class="service-item">
-            <h2>Database Management</h2>
-            <img src="Images/database-management.png" alt="Database Management">
-            <p>We provide robust database solutions to improve data management. Our services include database design, performance tuning, data migration, and backup. We support various database systems and offer ongoing administration and support.</p>
-        </div>
-    </div>
-
-
-    <br><br> <!-- And this too please -->
     
-</main>
 <section class="Footer">
         <div class="our-services">
             <h3>
@@ -121,12 +103,12 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Services</a></li>
                 <li><a href="#">Prices</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
             </ul>
     </div>
     <div class="contact-details">
             <h3>
-                Conatct Details
+                Contact Details
             </h3><br>
             <ul class="contact">
                 <li>Gurei Residential Area, Lemom Gaba Rd <br>
@@ -141,6 +123,7 @@
             <button id="scrollUp" onclick="scrollToTop()">&#8679;</button>
     </div>
 </section>
-<script src="index.js"></script>
+    
+<script src="index.js?v=2"></script> <!--Added the source for the js codes-->
 </body>
 </html>
