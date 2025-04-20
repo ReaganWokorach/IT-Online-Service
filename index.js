@@ -58,6 +58,7 @@ document.getElementById("submitButton").addEventListener("click", function(event
     if (isValid){
         alert("Message sent");
         document.getElementById("contactForm").submit(); // This will submit the form to the server (submit_form.php)
+        window.window.location.href = "index.html"; //reset the page back to the home page.
     }
 });
 

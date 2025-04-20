@@ -58,12 +58,8 @@ if(isset($_POST['clear_messages'])){
     <h2>Admin Panel</h2>
     <ul>
       <li><a href="index.html">Dashboard</a></li>
-      <li><a href="#">Users</a></li>
-      <li><a href="#">Contact Messages</a></li>
-      <li><a href="#">Settings</a></li>
-    </ul>
+      <li><a href="contact-us.html">Contact Messages</a></li>
     </div>
-    <h2>Contact Form Messages</h2>
     <form action="" method="post" onsubmit="return confrim('Are you sure you want to delete this message?');" style="display: inline;">
     </form>
     <table id="table">
