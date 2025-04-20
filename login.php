@@ -8,8 +8,8 @@ if (isset($_SESSION['admin_logged_in'])){
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['password'] ?? '';
+    $username = $_POST['username']??'';
+    $password = $_POST['password']?? '';
 
     //Database connection 
     $conn = new mysqli('localhost', 'root', '', 'contact_form');

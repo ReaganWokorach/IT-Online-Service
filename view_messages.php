@@ -52,9 +52,18 @@ if(isset($_POST['clear_messages'])){
     <link rel="stylesheet" href="view_messages.css">
 </head>
 <body>
+    <div class="body">
+    <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Contact Messages</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+    </div>
     <h2>Contact Form Messages</h2>
     <form action="" method="post" onsubmit="return confrim('Are you sure you want to delete this message?');" style="display: inline;">
-        <button type="submit" name="clear_messages" class="clear-button">Clear All Messages</button>
     </form>
     <table>
         <thead>
@@ -68,7 +77,7 @@ if(isset($_POST['clear_messages'])){
         </thead>
         <tbody>
             <?php if ($result -> num_rows > 0):?>
-             <?php while($row = $result -> fetch_assoc()): ?>
+            <?php while($row = $result -> fetch_assoc()): ?>
             <tr>
                 <td><?= $row['id'] ?></td>
                 <td><?= htmlspecialchars($row['name'])?></td>
@@ -82,7 +91,9 @@ if(isset($_POST['clear_messages'])){
         <?php endif; ?>     
         </tbody>
     </table>
-
+</div>
+    <button type="submit" name="clear_messages" class="clear-button">Clear All Messages</button>
     <a href="logout.php" class="logout-button">Logout</a>
+
 </body>
 </html>

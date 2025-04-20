@@ -3,8 +3,37 @@ body {
     background-color: #f0f8ff;
     padding: 20px;
 }
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #2E8B57;
+    color: white;
+    padding: 20px;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 30px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
 h2 {
-    color: #033B5C;
+    color: white;
 }
 table {
     width: 100%;
