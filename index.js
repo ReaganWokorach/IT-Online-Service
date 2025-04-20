@@ -85,6 +85,4 @@ document.getElementById("clearBtn").addEventListener("click", function () {
     }
 });
 
-
-
 });
