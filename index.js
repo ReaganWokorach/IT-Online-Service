@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 document.getElementById("submitButton").addEventListener("click", function(event){
     event.preventDefault(); //Block default submission
 
@@ -75,5 +77,10 @@ function scrollToTop(){
     window.scrollTo({top: 0, behavior: "smooth"});
 }
 
-
-   
+//clear table content
+document.getElementById("clearBtn").addEventListener("click", function () {
+    if (confirm("Are you sure you want to delete all messages?")) {
+        document.getElementById("clearForm").submit();
+    }
+});
+});

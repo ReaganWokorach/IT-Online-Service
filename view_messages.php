@@ -1,6 +1,7 @@
 <?php 
 //To protect the messages recieved 
 session_start();
+
 if(!isset($_SESSION['admin_id'])){
     header("Location: contactus.php"); // change this to redirect to refrest the form 
     exit();
@@ -56,7 +57,7 @@ if(isset($_POST['clear_messages'])){
     <div class="sidebar">
     <h2>Admin Panel</h2>
     <ul>
-      <li><a href="#">Dashboard</a></li>
+      <li><a href="index.html">Dashboard</a></li>
       <li><a href="#">Users</a></li>
       <li><a href="#">Contact Messages</a></li>
       <li><a href="#">Settings</a></li>
@@ -65,7 +66,7 @@ if(isset($_POST['clear_messages'])){
     <h2>Contact Form Messages</h2>
     <form action="" method="post" onsubmit="return confrim('Are you sure you want to delete this message?');" style="display: inline;">
     </form>
-    <table>
+    <table id="table">
         <thead>
             <tr>
                 <th>#</th>
@@ -92,8 +93,13 @@ if(isset($_POST['clear_messages'])){
         </tbody>
     </table>
 </div>
-    <button type="submit" name="clear_messages" class="clear-button">Clear All Messages</button>
+<!-- Form to clear the table contents upon clicking clear all button -->
+<form id="clearForm" method="POST" action="view_messages.php">
+<input type="hidden" name="clear_messages" value="1">
+<button type="submit" name="clear_messages" id="clearBtn" class="clear-button">Clear All Messages</button>
+</form>
+<!-- Button to log out  -->
     <a href="logout.php" class="logout-button">Logout</a>
-
+    <script src="index.js"></script>
 </body>
 </html>

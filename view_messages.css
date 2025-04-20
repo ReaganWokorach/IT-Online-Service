@@ -6,13 +6,16 @@ body {
 .body{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:0;
 }
 
 .sidebar {
     width: 220px;
     background-color: #2E8B57;
     color: white;
-    padding: 20px;
+    border-radius: 5px;
   }
 
   .sidebar h2 {
