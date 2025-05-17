@@ -458,3 +458,28 @@ h3{
     text-align: center;
     justify-content: center;
 }
+
+/*Design for the Admin Button*/
+.admin-login-wrapper {
+    text-align: right;
+    margin: 20px 40px 0 0;
+}
+
+.admin-login-button {
+    background-color: #045326; /* green */
+    color: #f0f8ff; /* light blue white */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.admin-login-button:hover {
+    background-color: #FEDB03; /* dark blue on hover */
+    color: rgb(8, 8, 8);
+}
+
+

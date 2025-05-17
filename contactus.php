@@ -23,8 +23,8 @@
             </div>
             <div class="ourEmail">
                 <h2>Our emails</h2>
-                <p class="gapUp"><a href="mailto: wokorachreagan5030@gmail.com">My personal email</a></p>
-                <p><a href="mailto: wr213897@students.cavendish.ac.ug">My school email</a></p>
+                <p class="gapUp"><a href="mailto: nightlearners42@gmail.com">nightlearners42@gmail.com</a></p>
+                <p><a href="mailto: wr213897@students.cavendish.ac.ug">Our Agent</a></p>
             </div>
         </div>
         <div class="navBar">
@@ -36,12 +36,15 @@
                 <i class="bx bx-x"></i> <!-- Close icon -->
             </label>
             <nav class="allNavs">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="ourServices.html">Our Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="index.php">Home</a>
+                <a href="aboutUs.php">About Us</a>
+                <a href="ourServices.php">Our Services</a>
+                <a href="pricing.php">Pricing</a>
+                <a href="contactus.php">Contact Us</a>
             </nav>
+        </div>
+        <div class="admin-login-wrapper">
+            <a href="login.php" class="admin-login-button">Login as an Admin</a>
         </div>
     </header>
     <!-- Contact form Section -->
@@ -50,23 +53,23 @@
             <h1>Contact Us</h1>
             <P class="contact-info">Should you have any questions, please get in touch</P>
             
-            <form id="contactForm"> <!--Added an id for Form validation with js and also added span with error messages within the form-->
+            <form action="submit_form.php" method="post" id="contactForm"> <!--Added an id for Form validation with js and also added span with error messages within the form-->
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="text" id="name" placeholder="Enter your name" name="name"required>
                     <span class="error" id="nameError">This field is required</span>
                 </div>
                 <div class="form-group">
                     <label for="Email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" id="email" placeholder="Enter your email" name="email" required>
                     <span class="error" id="emailError">Please enter a valid email address</span>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    <textarea id="message" rows="5" placeholder="Enter your message" name="message"required></textarea>
                     <span class="error" id="messageError">This Field is required</span>
                 </div>
-                <button type="button" id="submitButton">Send Message</button> <!--Added an id to submitButton-->
+                <button type="submit" id="submitButton">Send Message</button> <!--Added an id to submitButton-->
             </form>
     </div>
         <div class="map-container">
@@ -121,6 +124,6 @@
     </div>
 </section>
     
-<script src="index.js"></script> <!--Added the source for the js codes-->
+<script src="index.js?v=2"></script> <!--Added the source for the js codes-->
 </body>
 </html>

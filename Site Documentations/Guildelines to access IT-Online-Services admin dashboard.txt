@@ -1,0 +1,87 @@
+IT Online Services - Project Setup Guide
+Requirements:
+XAMPP (Download from https://www.apachefriends.org)
+
+A browser (Chrome, Firefox, etc.)
+
+Step 1: Set Up XAMPP
+
+1. Install XAMPP on your computer.
+
+2. Open XAMPP Control Panel.
+
+3. Start these two modules:
+
+-Apache
+
+-MySQL
+
+Step 2: Place the Project in XAMPP
+Copy the entire project folder (e.g. IT-Online-Service) into:
+
+C:\xampp\htdocs\
+So your path will look like:  C:\xampp\htdocs\IT-Online-Service\
+
+Step 3: Import the Database
+
+1. Open your browser and go to:
+
+	http://localhost/phpmyadmin
+2. Click "New" on the left menu and create a new database:
+
+
+	Name: contact_form
+	Then click Create.
+
+3. With contact_form selected, click on the Import tab.
+
+4. Click Choose File, and select the provided .sql file (should be in your project folder).
+
+5. Click Go to import the tables (this will include the messages table and admin credentials).
+
+Step 4: Login as Admin
+
+1. In your browser, open the login page:
+
+http://localhost/IT-Online-Service/admin_login_handler.php
+
+2. Use the default admin credentials:
+
+	Username: siteadmin
+
+	Password: 123
+	(This password is encrypted in the database, so don’t change it manually)
+
+3. After successful login, you’ll be redirected to view all submitted contact messages.
+
+4. Submitting a Message
+	Visit the contact page:
+	http://localhost/IT-Online-Service/contactus.php
+
+5. Fill out the form and click Send Message.
+
+The message will be saved in the database and viewable from the admin dashboard.
+
+6. Logout and Clear Messages
+	From the admin dashboard, you can:
+
+	1. Click Logout to end the session.
+
+	2  Click Clear All Messages to delete all messages from the database.
+
+
+Notes for Developers/Groupmates
+
+- The project uses PHP + MySQL and runs fully on localhost (no internet required).
+
+- All admin passwords are stored securely using PHP password hashing.
+
+- All form submissions go through JavaScript validation before reaching the database.
+
+- If anyone gets stuck, just double-check:
+
+- Apache and MySQL are running.
+
+- Database is properly imported.
+
+- You're accessing the correct localhost URL.

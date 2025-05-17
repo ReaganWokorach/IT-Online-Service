@@ -23,8 +23,8 @@
             </div>
             <div class="ourEmail">
                 <h2>Our emails</h2>
-                <p class="gapUp"><a href="mailto: wokorachreagan5030@gmail.com">My personal email</a></p>
-                <p><a href="mailto: wr213897@students.cavendish.ac.ug">My school email</a></p>
+                <p class="gapUp"><a href="mailto: nightlearners42@gmail.com">nightlearners42@gmail.com</a></p>
+                <p><a href="mailto: wr213897@students.cavendish.ac.ug">Our Agent</a></p>
             </div>
         </div>
         <div class="navBar">
@@ -36,11 +36,11 @@
                 <i class="bx bx-x"></i> <!-- Close icon -->
             </label>
             <nav class="allNavs">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="ourServices.html">Our Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="contactus.html">Contact Us</a>
+                <a href="index.php">Home</a>
+                <a href="aboutUs.php">About Us</a>
+                <a href="ourServices.php">Our Services</a>
+                <a href="pricing.php">Pricing</a>
+                <a href="contactus.php">Contact Us</a>
             </nav>
         </div>
     </header>

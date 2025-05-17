@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 30px;
+}
+
+.admin-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #033B5C;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.admin-form input,
+.admin-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.admin-form button {
+    margin-top: 20px;
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.admin-form button:hover {
+    background-color: #CE2B14;
+}
+
+.back-link {
+    margin-top: 15px;
+    display: inline-block;
+    color: #033B5C;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
