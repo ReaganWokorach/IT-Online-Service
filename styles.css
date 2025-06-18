@@ -243,17 +243,18 @@ main ul li:hover strong {
 /* General footer section  */
 
 .Footer{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
-    background-color: #2E8B57;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(rgba(46, 139, 87, 0.85), rgba(3, 59, 92, 0.85)), 
+                url('images/slider4.jpg') no-repeat center center/cover;
     color: #f0f8ff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:0px;
-    width: 100%; /*Added By Daniel*/
-    margin-top: 20px; /*Added by Daniel*/
-    position: relative; /*Added by Daniel*/
+    margin-bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
 }
 
 /* remove the dots for list */
@@ -474,6 +475,50 @@ h3{
     justify-content: center;
 }
 
+/* navigation slider */
+.hero-header {
+    background: linear-gradient(rgba(46,139,87,0.7), rgba(3,59,92,0.6)), 
+                url('images/slider2.jpg') no-repeat center center/cover;
+    color: #f0f8ff;
+    padding: 40px 7% 150px;
+    position: relative;
+    text-align: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-slide {
+    margin-top: 40px;
+}
+
+.hero-slide h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FEDB03;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #033B5C;
+}
+
+.hero-slide p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.btn-discover {
+    padding: 12px 24px;
+    background-color: #FEDB03;
+    color: #033B5C;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: #CE2B14;
+    color: white;
+}
 
 
 

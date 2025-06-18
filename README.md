@@ -1,7 +1,9 @@
 # IT ONLINE SERVICES GROUP DETAILS
+
 Night Learners IT Group is a dynamic and innovative IT solutions provider dedicated to delivering high-quality digital services. We specialize in Web Design, Domain & Hosting Services, Computer Repair & Maintenance, Database Development & Management, Logo Design, and Banner Design. Our team is committed to providing tailored solutions that help businesses and individuals establish a strong digital presence while ensuring smooth and efficient IT operations.
 
 ## PROJECT CONTRIBUTORS
+
 - Reagan Wokorach DIT [213897](wr213897@students.cavendish.ac.ug)
 - John Ohisio BIT [201326](oj201326@students.cavendish.ac.ug)
 - Erias Lubega DIT [206069](ll206069@students.cavendish.ac.ug)
@@ -12,10 +14,13 @@ Night Learners IT Group is a dynamic and innovative IT solutions provider dedica
 - Martin Onyabuko DIT [208687](om208687@students.cavendish.ac.ug)
 - Rehema Kabaguma DIT [208905](kr208905@students.cavendish.ac.ug)
 - David Agboola Adegboyega DIT [202860](aa202860@students.cavendish.ac.ug)
+
 #### NB
+
 Click on ID number above to email individual contributor
 
 ## OUR SERVICES
+
 - Web Design and Development.
 - Domain and Hosting Services.
 - Computer Repair and Maintenance.
@@ -23,4 +28,5 @@ Click on ID number above to email individual contributor
 - Logo and Banner Design.
 
 ## [LINK](https://itonlineservices.netlify.app/) for our Website hosted on Netlify [HERE](https://itonlineservices.netlify.app/)
+
 - Our website is hosted life on Netlify, and any changes that we make, shall automatically be reflected on the hosted website.

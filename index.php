@@ -10,7 +10,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="hero-header">
         <div class="topContact">
             <div class="ourMobile">
                 <h2>Whatsapp</h2>
@@ -44,8 +44,15 @@
                 <a href="contactus.php">Contact Us</a>
             </nav>
         </div>
+        <div class="hero-slider">
+            <h1>Innovating the Future of Tech</h1>
+            <p>We are a passionate IT group transforming ideas into digital solutions through collaboration, creativity, and code.</p>
+            <br>
+            <br>
+            <a href="#" class="btn-discover">Meet the Team</a>
+        </div>
     </header>
-
+    
     <main>
     
         <!--The Company Info-->
@@ -120,5 +127,22 @@
     </div>
 </section>
 <script src="index.js"></script>
+<script>
+  const heroHeader = document.querySelector('.hero-header');
+    const images = [
+        'images/slider1.jpg',
+        'images/slider2.jpg',
+        'images/slider3.jpg',
+        'images/slider4.jpg' // Add as many as you want
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        heroHeader.style.backgroundImage = `linear-gradient(rgba(46,139,87,0.7), rgba(3,59,92,0.6)), url('${images[index]}')`;
+    }, 4000); // Change every 4 seconds
+</script>
+
 </body>
 </html>
